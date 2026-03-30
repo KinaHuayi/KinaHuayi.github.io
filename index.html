@@ -62,6 +62,19 @@
         flex-direction: column;
     }
 }
+            .project-images {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 12px;
+    }
+    
+    .project-images img {
+        width: 100%;
+        height: 180px; /* or 200px if you want bigger */
+        object-fit: cover;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+    }
     </style>
 </head>
 <body>
@@ -94,19 +107,28 @@
     <div class="projects">
         <h2>Projects</h2>
         <h3>Berkeley Formula Electric, Aerodynamics</h3>
-        <img src="assets/css/BerkeleyFSAE_EV_SN4.jpg"> <img src="assets/css/FSAE_EV_SN4 render.png"> <img src="assets/css/FSAE EV composites SN5.png">
+        <h3>Berkeley Formula Electric, Aerodynamics</h3>
+    <div class="project-images">
+        <img src="assets/css/BerkeleyFSAE_EV_SN4.jpg">
+        <img src="assets/css/FSAE_EV_SN4 render.png">
+        <img src="assets/css/FSAE EV composites SN5.png">
+    </div>
         <p>SN5 Aerodynamics subteam lead. SN4 undertray mold design, SN5 rear wing structures design guided by ANSYS FEA analysis, mold machining CAM in Fusion360, vacuum infusion layups. </p>
         
         <h3>UC Berkeley School Projects</h3>
-        <img src="assets/css/ME100 PARCEL.png"> <img src="assets/css/E26 Windmill.png"> <img src="assets/css/E26 Windmill Sketch.png"> <img src="assets/css/E26 Windmill Power vs Current Plot.png">
-        <ul>
+        <div class="project-images">
+            <img src="assets/css/ME100 PARCEL.png"> <img src="assets/css/E26 Windmill.png"> <img src="assets/css/E26 Windmill Sketch.png"> <img src="assets/css/E26 Windmill Power vs Current Plot.png">
+        </div>
+            <ul>
             <li>P.A.R.C.E.L. Secure Mailbox for ME100 Electronics for the IoT</li>
             <li>3DP Windmill Optimization for E29</li>
         </ul>
 
         <h3>FRC Team 1678 Citrus Circuits, 2024 Captain, 2022-2024 Hardware Design Subsystem Lead, 2023 Strategy Lead</h3>
-        <img src="assets/css/FRC1678_2024.avif"> <img src="assets/css/FRC1678_2024_Amp.png"> <img src="assets/css/FRC1678_2023.avif"> <img src="assets/css/FRC1678_2023_end_effector.avif">
-        <p><a href="https://www.citruscircuits.org/2024-robot"/>2024 Tangerine Tumbler</a> and <a href="https://www.citruscircuits.org/2023-robot"/>2023 Nik</a> robot CAD and competition photos. Designed the 2023 end effector and 2024 amp scoring mechanism (elevator stage with game piece placement). </p>
+        <div class="project-images">
+            <img src="assets/css/FRC1678_2024.avif"> <img src="assets/css/FRC1678_2024_Amp.png"> <img src="assets/css/FRC1678_2023.avif"> <img src="assets/css/FRC1678_2023_end_effector.avif">
+        </div>
+            <p><a href="https://www.citruscircuits.org/2024-robot"/>2024 Tangerine Tumbler</a> and <a href="https://www.citruscircuits.org/2023-robot"/>2023 Nik</a> robot CAD and competition photos. Designed the 2023 end effector and 2024 amp scoring mechanism (elevator stage with game piece placement). </p>
     </div>
 </body>
 </html>
