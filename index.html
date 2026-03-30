@@ -4,27 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kina Li's Professional Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        section {
             margin: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
-        h1, h2, h3 {
-            color: #333;
+        .project-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
         }
-        .contact-info, .education, .skills, .projects {
-            margin-bottom: 20px;
-            page-break-after: always;
+        .project-gallery img {
+            width: 30%;
+            margin: 1%;
+            border: 1px solid #ccc;
         }
         @media print {
-            h1, h2, h3 {
-                page-break-inside: avoid;
+            body {
+                margin: 0;
+                padding: 0;
+                -webkit-print-color-adjust: exact;
+            }
+            .no-print {
+                display: none;
+            }
+            header, section {
+                page-break-after: avoid;
             }
         }
     </style>
 </head>
 <body>
-    <h1>Kina Li's Professional Portfolio</h1>
+    <header>
+        <h1>Kina Li</h1>
+        <p>Contact: 530-405-7863 | <a href="https://www.linkedin.com/in/yourprofile">LinkedIn</a> | <a href="https://github.com/KinaHuayi">GitHub</a></p>
+    </header>
+
+    <section>
+        <h2>Education</h2>
+        <p>UC Berkeley - Dual Degree in Mechanical Engineering and Electrical Engineering & Computer Sciences (EECS)<br>
+        GPA: 3.8</p>
+    </section>
     <div class="contact-info">
         <h2>Contact Information</h2>
         <p>Email: kina_li@berkeley.edu</p>
