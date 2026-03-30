@@ -3,39 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kina Li's Portfolio</title>
+    <title>Kina Li's Professional Portfolio</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        header { background-color: ##944a1c; color: white; padding: 20px; text-align: center; }
-        .portfolio { display: flex; flex-wrap: wrap; justify-content: center; padding: 20px; }
-        .project-card { border: 1px solid #ddd; border-radius: 5px; margin: 10px; padding: 15px; width: 300px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); }
-        .project-card img { max-width: 100%; border-radius: 5px; }
-        footer { text-align: center; padding: 20px; background-color: #f1f1f1; margin-top: 20px; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        .contact-info, .education, .skills, .projects {
+            margin-bottom: 20px;
+            page-break-after: always;
+        }
+        @media print {
+            h1, h2, h3 {
+                page-break-inside: avoid;
+            }
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Kina Li's Engineering Portfolio</h1>
-    </header>
-    <section class="portfolio">
-        <div class="project-card">
-            <img src="project1-image-url.jpg" alt="Project 1">
-            <h2>Berkeley Formula Electric Aerodynamics (FSAE EV)</h2>
-            <p>Description of project 1, detailing the problem it solves and technologies used.</p>
-        </div>
-        <div class="project-card">
-            <img src="project2-image-url.jpg" alt="Project 2">
-            <h2>Project 2 Title</h2>
-            <p>Description of project 2, detailing the problem it solves and technologies used.</p>
-        </div>
-        <div class="project-card">
-            <img src="project3-image-url.jpg" alt="Project 3">
-            <h2>Project 3 Title</h2>
-            <p>Description of project 3, detailing the problem it solves and technologies used.</p>
-        </div>
-    </section>
-    <footer>
-        <p>© 530-405-7863 |  | https://www.linkedin.com/in/kina-li | https://github.com/KinaHuayi </p>
-    </footer>
+    <h1>Kina Li's Professional Portfolio</h1>
+    <div class="contact-info">
+        <h2>Contact Information</h2>
+        <p>Email: kina.li@email.com</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/kinali">linkedin.com/in/kinali</a></p>
+    </div>
+    <div class="education">
+        <h2>Education</h2>
+        <p>B.S. in Mechanical Engineering, UC Berkeley, 2024</p>
+    </div>
+    <div class="skills">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>ANSYS CFD</li>
+            <li>Fusion360</li>
+            <li>Vacuum Infusion Techniques</li>
+            <li>3D Modeling and CAD</li>
+            <li>Project Management</li>
+        </ul>
+    </div>
+    <div class="projects">
+        <h2>Projects</h2>
+        <h3>Formula Electric Aerodynamics</h3>
+        <p>Work included undertray mold design, ANSYS CFD analysis, CAM in Fusion360, vacuum infusion process, and SN4 photos.</p>
+        <h3>UC Berkeley School Projects</h3>
+        <ul>
+            <li>IoT Mailbox for E26</li>
+            <li>3D Windmill Optimization for ME100</li>
+        </ul>
+        <h3>FRC 1678 Citrus Circuits</h3>
+        <p>2024 and 2023 robot CAD and competition photos with a detailed 6-week engineering timeline and performance details.</p>
+    </div>
 </body>
 </html>
