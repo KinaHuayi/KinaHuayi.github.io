@@ -48,31 +48,47 @@
                 page-break-after: avoid;
             }
         }
+            .two-column {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .two-column section {
+            flex: 1;
+        }
+        @media (max-width: 700px) {
+    .two-column {
+        flex-direction: column;
+    }
+}
     </style>
 </head>
 <body>
     <header>
         <h1>Kina Li</h1>
-        <p>Contact: (530) 405-7863 | <a>Email: kina_li@berkeley.edu</a> | <a href="https://www.linkedin.com/in/kina-li-690600321"/>LinkedIn</a> | <a href="https://github.com/KinaHuayi">GitHub</a></p>
+        <p>Contact: (530) 405-7863 | <a>Email: <a href="mailto:kina_li@berkeley.edu"/>kina_li@berkeley.edu</a> | <a href="https://www.linkedin.com/in/kina-li-690600321"/>LinkedIn</a> | <a href="https://github.com/KinaHuayi">GitHub</a></p>
     </header>
 
-    <section>
-        <h2>Education</h2>
-        <p>UC Berkeley - Double Major in Mechanical Engineering and Electrical Engineering & Computer Sciences (EECS), B.S. <br>
-        GPA: 3.80<br>
-        Expected Graduation: May 2028</p>
-    </section>
-    <section>
-        <h2>Technical Skills</h2>
-        <ul>
-            <li>CAD/CAM (SOLDIWORKS, Fusion360, AutoCAD, Onshape)</li>
-            <li>CNC and Manual Machining (mill, router, lathe)</li>
-            <li>3D printing (FDM, SLA)</li>
-            <li>Composites Manufacturing</li>
-            <li>FEA (ANSYS Mechanical) </li>
-            <li>MATLAB, Python, C++, Java, Excel, Tableau</li>
-        </ul>
-    </section>
+    <div class="two-column">
+        <section>
+            <h2>Education</h2>
+            <p>UC Berkeley - Double Major in Mechanical Engineering and Electrical Engineering & Computer Sciences (EECS), B.S. <br>
+            GPA: 3.80<br>
+            Expected Graduation: May 2028</p>
+        </section>
+    
+        <section>
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>CAD/CAM (SOLIDWORKS, Fusion360, AutoCAD, Onshape)</li>
+                <li>CNC and Manual Machining (mill, router, lathe)</li>
+                <li>3D printing (FDM, SLA)</li>
+                <li>Composites Manufacturing</li>
+                <li>FEA (ANSYS Mechanical)</li>
+                <li>MATLAB, Python, C++, Java, Excel, Tableau</li>
+            </ul>
+        </section>
+    </div>
     <div class="projects">
         <h2>Projects</h2>
         <h3>Berkeley Formula Electric Aerodynamics</h3>
